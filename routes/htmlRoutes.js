@@ -3,7 +3,7 @@ var db = require("../models");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    db.Dnde5.findAll({ limit : 5 }).then(function(characterData) {
+    db.Dnd5e.findAll({ limit : 5 }).then(function(characterData) {
       res.render("index", {
         recent: characterData
       });
@@ -14,7 +14,7 @@ module.exports = function(app) {
   app.get("/game", function(req, res) {
       res.render("game-pick", {
         type1 : "dnd5e",
-        type2 : something
+        type2 : "something"
       });
   });
 
