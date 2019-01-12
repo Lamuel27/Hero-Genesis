@@ -1,0 +1,15 @@
+<!-- Hello/Homepage :: CSS -->
+
+<!-- Go/Create button :: pulls Game Selector page -->
+<div>
+    <buton type="submit">Create</buton>
+</div>
+<!-- Latest Creations :: pulls data from server/db by pulling from model -->
+<h2>Latest Creations</h2>
+<div>
+    {{#each context.characters}}
+        {{#each this}}
+            {{@key}} - {{this}}
+        {{/each}}
+    {{/each}}
+</div>
