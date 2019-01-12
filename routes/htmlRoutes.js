@@ -13,7 +13,7 @@ module.exports = function(app) {
   // Load game pick page
   app.get("/game", function(req, res) {
       res.render("game-pick", {
-        type1 : dnd5e,
+        type1 : "dnd5e",
         type2 : something
       });
   });
@@ -22,7 +22,7 @@ module.exports = function(app) {
   app.get("/form/:type", function(req, res) {
     if (req.params.id = "dnde5"){
       res.render("form-dnd5e", {
-        type : dnd5e
+        type : "dnd5e"
       });
     }
   });
@@ -30,7 +30,7 @@ module.exports = function(app) {
   //Load print form page
   app.get("/form/:type/:id", function(req, res) {
     if (req.params.type = "dnd5e"){
-    db.dnd5e.findOne({ 
+    db.Dnd5e.findOne({ 
       where: {
         type: "dnd5e",
         id: req.params.id
