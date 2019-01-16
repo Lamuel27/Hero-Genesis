@@ -1,24 +1,17 @@
 var db = require("../models");
 
 module.exports = function(app) {
-  // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
+  //Submit a character
+  app.post("/form/:type", function(req, res) {
+    if(req.params.type = "dnd5e"){
+    db.Dnd5e.create(req.body).then(function(character) {
+      res.json(character);
     });
-  });
-
-  // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
-    });
-  });
-
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.json(dbExample);
-    });
+    }
+    else if(req.params.type = "something"){
+      db.Something.create(req.body).then(function(character){
+        res.json(character);
+      })
+    }
   });
 };
