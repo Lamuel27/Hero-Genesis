@@ -1,3 +1,25 @@
+<script>
+// 'use strict';
+
+let PDF = require('handlebars-pdf');
+let document = {
+template: '<h1>Character Form: DnD 5e</1>'+
+'{{{form}}}',
+context: {
+    msg: 'Printing'
+},
+path: "./test-"+Math.random()+".pdf"
+};
+
+pdf.create(document)
+    .then(res => {
+        console.log(res)
+    })
+    .catch(error => {
+        console.log(error)
+    });
+</script>
+
 <h1>Character Form: DnD 5e</h1>
 
 <form class="create-form">
