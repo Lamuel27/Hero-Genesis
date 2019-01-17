@@ -1,8 +1,14 @@
-// Change below references to page elements
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
 var $submitBtn = $("#submit");
 var $exampleList = $("#example-list");
+
+// Random name generator - superheroes npm
+var name = superheroes.random();
+// => 'Spider-Ham'
+
+  // random name generator functionality - attach to button in form?
+  console.log("Your hero name is " + name);
 
 // The API object contains methods for each kind of request we'll make
 var API = {
