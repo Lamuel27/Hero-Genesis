@@ -55,12 +55,25 @@ var refreshChar = function() {
 
 // handleFormSubmit is called whenever we submit a new example
 // Save the new example to the db and refresh the list
+
 var submitChar = function(event) {
-  event.preventDefault();
+event.preventDefault();
 
   var char = {
-    // Enter data here in "column: value" format
+    name: $("#nameText").val().trim(),
+    class: $("#classTest").val().trim(),
+    level: $("#levelVal").val().trim(),
+    background: $("#backgroundText").val().trim(),
+    race: $("#raceText").val().trim(),
+    alignment: $("#alignmentText").val().trim(),
+    experience: $("#experienceVal").val().trim(),
+    personalityTraits: $("#personalityTraitsText").val().trim(),
+    ideals: $("#idealsText").val().trim(),
+    bonds: $("#bondsText").val().trim(),
+    flaws: $("#flawsText").val().trim(),
+    featuresAndTraits: $("#featuresAndTraitsText").val().trim()
   };
+  console.log(char);
 
   // Change below to reflect the data inputs
   if (!(example.text && example.description)) {
@@ -79,3 +92,4 @@ var submitChar = function(event) {
 
 // Add event listener to the submit button
 $submitBtn.on("click", submitChar);
+
