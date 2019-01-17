@@ -9,3 +9,7 @@ body {
 h1, h2, h3, h4, h5, h6, p, li, td {
   color: rgb(200,200,200)
 }
+
+.btn {
+  margin-top: 5%;
+}
