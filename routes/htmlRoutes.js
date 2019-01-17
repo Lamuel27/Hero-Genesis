@@ -4,7 +4,7 @@ module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
     db.Dnd5e.findAll({ limit : 5 }).then(function(data) {
-      var hbObj = {character: data}
+      var hbObj = {character: data};
       res.render("index", hbObj);
     });
   });
@@ -56,10 +56,10 @@ module.exports = function(app) {
 
   //View all
   app.get("/creations/all", function(req, res) {
-    db.Dnd5e.findAll({}).then(function(characterData) {
-      res.render("view-all", {
-        all: characterData
-      });
+    db.Dnd5e.findAll().then(function(data) {
+      var hbObj = {character: data};
+      console.log(data);
+      res.render("view-all", hbObj);
     });
   });
 
