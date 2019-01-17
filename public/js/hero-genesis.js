@@ -1,3 +1,18 @@
+$(document).ready(function(){
+  $("#getStarted").on("click", function(){
+      $.get("/game", function(data){
+        $("body").html(data);
+      })
+    });
+  $("#submitType").on("click", function(){
+    $.get("/form/:type", function(data){
+      $("body").html(data);
+    })
+  });
+});
+
+
+//===========
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
 var $submitBtn = $("#submit");
@@ -98,4 +113,3 @@ event.preventDefault();
 
 // Add event listener to the submit button
 $submitBtn.on("click", submitChar);
-

@@ -3,10 +3,9 @@ var db = require("../models");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    db.Dnd5e.findAll({ limit : 5 }).then(function(characterData) {
-      res.render("index", {
-        recent: characterData
-      });
+    db.Dnd5e.findAll({ limit : 5 }).then(function(data) {
+      var hbObj = {character: data}
+      res.render("index", hbObj);
     });
   });
 
