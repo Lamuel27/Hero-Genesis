@@ -24,42 +24,42 @@ module.exports = function(sequelize, DataTypes) {
       },
       race: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
         len: [1]
       },
       alignment: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
         len: [1]
       },
       experience: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
         len: [1]
       },
       personalityTraits: {
         type: DataTypes.TEXT,
-        allowNull: false,
+        allowNull: true,
         len: [1]
       },
       ideals: {
         type: DataTypes.TEXT,
-        allowNull: false,
+        allowNull: true,
         len: [1]
       },
       bonds: {
         type: DataTypes.TEXT,
-        allowNull: false,
+        allowNull: true,
         len: [1]
       },
       flaws: {
         type: DataTypes.TEXT,
-        allowNull: false,
+        allowNull: true,
         len: [1]
       },
       featuresAndTraits: {
         type: DataTypes.TEXT,
-        allowNull: false,
+        allowNull: true,
         len: [1]
       }
     });
