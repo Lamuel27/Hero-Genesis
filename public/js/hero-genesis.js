@@ -8,7 +8,7 @@ $(document).ready(function(){
     var type = "dnd5e";
     $.get("/form/:type", type, function(data){
       $("body").html(data);
-    })
+    });
   });
   $("#submitFormDnd5e").on("click", function(e){
     e.preventDefault();

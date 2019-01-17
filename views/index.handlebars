@@ -11,13 +11,16 @@
         
         <h4>Recent Creations</h4>
         <ul id="example-list" class="list-group">
-          {{#each character}}
-          <li data-id="{{this.id}}" class="list-group-item">
-            {{name}}<br>
-            {{class}}<br>
-            {{level}}<br>
-          </li>
-          {{/each}}
+          <table>
+            {{#each character}}
+            <tr data-id="{{this.id}}" class="list-group-item">
+              <td>{{name}}</td>
+              <td>{{race}}</td>
+              <td>{{class}}</td>
+              <td>{{level}}</td>
+            </tr>
+            {{/each}}
+          </table>
         </ul>
       </div>
     </div>
