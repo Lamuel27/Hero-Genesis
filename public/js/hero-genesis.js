@@ -7,6 +7,6 @@ $(document).ready(function(){
   $("#submitType").on("click", function(){
     $.get("/form/:type", function(data){
       $("body").html(data);
-    })
+    });
   });
 });
