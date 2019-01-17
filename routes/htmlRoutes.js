@@ -56,7 +56,7 @@ module.exports = function(app) {
 
   //View all
   app.get("/creations/all", function(req, res) {
-    db.Dnde5.findAll({}).then(function(characterData) {
+    db.Dnd5e.findAll({}).then(function(characterData) {
       res.render("view-all", {
         all: characterData
       });
@@ -65,7 +65,7 @@ module.exports = function(app) {
 
   //View users
   app.get("/creations/:users", function(req, res) {
-    db.Dnde5.findAll({}).then(function(characterData) {
+    db.Dnd5e.findAll({}).then(function(characterData) {
       res.render("view-all", {
         all: characterData
       });
