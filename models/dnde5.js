@@ -82,13 +82,6 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: true,
         validate: {
           len: [1]
-        }
-      },
-      gameType: {
-        type: DataTypes.STRING,
-        allowNull:true,
-        validate: {
-          len: [1]
         } 
       }
     });
