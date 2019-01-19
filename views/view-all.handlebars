@@ -1,21 +1,14 @@
 <div id="view-all">
-  <div class="container">
-    <div class="row">
-      <div class="col-8 offset-2">
-          <h2>All Characters</h2>
-        <ul id="view-all-list" class="list-group">
-          <table>
-            {{#each character}}
-            <tr data-id="{{this.id}}" class="list-group-item">
-              <td>{{name}}</td>
-              <td>{{race}}</td>
-              <td>{{class}}</td>
-              <td>{{level}}</td>
-            </tr>
-            {{/each}}
-          </table>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+  <h2>All Characters</h2>
+  <ul id="view-all-list" class="list-group">
+    <table>
+      {{#each character}}
+      <tr data-id="{{this.id}}" class="list-group-item">
+        <td>{{name}}</td>
+        <td>{{race}}</td>
+        <td>{{class}}</td>
+        <td>{{level}}</td>
+      </tr>
+      {{/each}}
+    </table>
+  </ul>

@@ -1,29 +1,26 @@
-
 <div id="home">
-  <div class="container">
-    <div class="row">
-      <div class="col-8 offset-2">
-        <h1>{{msg}}</h1>
         <h2>Hero Genesis</h2>
-          <p>Hero genesis is the fucking coolest. This is a bunch of placeholder text to show you what this looks like. Click that motherfucking button.</p>
-        
-          <button id="getStarted" class="btn btn-primary float-right">Get started!</button>
-        
-        <h4>Recent Creations</h4>
-        <ul id="example-list" class="list-group">
-          <table>
-            {{#each character}}
-            <tr data-id="{{this.id}}" class="list-group-item">
-              <td>{{name}}</td>
-              <td>{{race}}</td>
-              <td>{{class}}</td>
-              <td>{{level}}</td>
-            </tr>
-            {{/each}}
-          </table>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+        <p>Hero genesis is the fucking coolest. This is a bunch of placeholder text to show you what this looks like.
+          Click that motherfucking button.</p>
 
+        <button id="getStarted" class="btn btn-primary float-right">Create Character</button>
+
+        <h4>Recent Creations</h4>
+        <table>
+          <thead>
+            <th>Name</th>
+            <th>Race</th>
+            <th>Class</th>
+            <th>Level</th>
+          </thead>
+          {{#each character}}
+          <tr data-id="{{this.id}}" class="list-group-item">
+            <td>{{name}}</td>
+            <td>{{race}}</td>
+            <td>{{class}}</td>
+            <td>{{level}}</td>
+          </tr>
+          {{/each}}
+        </table>
+     
+</div>
