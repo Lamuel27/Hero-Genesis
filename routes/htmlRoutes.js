@@ -20,12 +20,12 @@ module.exports = function (app) {
 
   //Load character form page
   app.get("/form/:type", function (req, res) {
-    if (req.params.type = "dnd5e") {
+    if (req.params.type == "dnd5e") {
       res.render("form-dnd5e", {
         type: "dnd5e"
       });
     }
-    else if (req.params.type = "fateacc") {
+    else if (req.params.type == "fateacc") {
       res.render("fateacc", {
         type: "fateacc"
       });
