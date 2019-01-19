@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "YourRootPassword",
+    "password": "bamazon9",
     "database": "hg",
     "host": "localhost",
     "dialect": "mysql"
