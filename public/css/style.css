@@ -9,6 +9,7 @@ body {
   background-position-x: right;
   background-repeat: no-repeat;
   background-blend-mode: soft-light;
+  background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6, p, li, td {
