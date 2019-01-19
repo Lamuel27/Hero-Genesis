@@ -1,15 +1,62 @@
 .list-group-item {
-  line-height: 2.5;
+  font-family: 'Quicksand', sans-serif;
 }
 
 body {
-  background-color: rgb(50,50,50)
+  background-color: rgb(21,24,33);
+  background-image: url("../images/Elf-Princess-2-Line-Art.png");
+  background-size: 40%;
+  background-position-x: right;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
 }
 
 h1, h2, h3, h4, h5, h6, p, li, td {
-  color: rgb(200,200,200)
+  font-weight: lighter;
+  color: rgb(200,200,200);
+  font-family: 'Quicksand', sans-serif;
+}
+
+h2, p {
+  text-align:center;
+}
+
+.list-group-item:hover {
+  background-color:rgb(17,20,29);
+}
+
+th {
+  font-weight:normal;
+  color:rgb(200,200,200);
+  font-size:20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+td {
+  border-top: 1px solid rgb(200,200,200);
+  border-bottom: 1px solid rgb(200,200,200);
+  font-family: 'Quicksand', sans-serif;
 }
 
 .btn {
   margin-top: 5%;
+  font-family: 'Quicksand', sans-serif;
+  margin-right:auto;
+  margin-left:auto;
+  display:block;
+  background-color: rgb(69,81,126);
+}
+
+.btn:hover {
+  background-color:rgb(82,88,110);
+}
+
+.sidenav {
+  background-color:rgb(18,21,30);
+  border-right:1px solid rgb(200,200,200);
+}
+
+.sidenav li>a {
+  color: rgb(200,200,200);
+  font-family: 'Quicksand', sans-serif;
 }
