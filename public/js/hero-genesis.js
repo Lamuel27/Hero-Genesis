@@ -34,6 +34,21 @@ $(document).ready(function(){
         flaws: $("#flawsText").val(),
         featuresAndTraits: $("#featuresAndTraitsText").val()
     }
+
+    $("#submitFormFateAcc").on("click", function(e){
+      e.preventDefault();
+      console.log("CLICKED");
+      var type= "dnd5e";
+      var newCharacter = {
+          name: $("#nameText").val(),
+          description: $("#descriptionText").val(),
+          highConcept: $("#highConceptText").val(),
+          trouble: $("#troubleText").val(),
+          aspect3: $("#aspect3Text").val(),
+          aspect4: $("#aspect4Text").val(),
+          aspect5: $("#aspect5Text").val(),
+          stunts: $("#stuntsText").val()
+      }
     console.log("Loggggggging");
     $.post("/form/" + type, newCharacter, function(data){
       console.log("New post="+data)
