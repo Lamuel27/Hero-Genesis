@@ -3,15 +3,9 @@ var conversion = require("phantom-html-to-pdf");
 
 module.exports = function (app) {
   // Load index page
-<<<<<<< HEAD
   app.get("/", function(req, res) {
     db.Dnd5e.findAll({ limit : 5, order : [['createdAt' , 'DESC']]}).then(function(data) {
       var hbObj = {character: data};
-=======
-  app.get("/", function (req, res) {
-    db.Dnd5e.findAll({ limit: 5 }).then(function (data) {
-      var hbObj = { character: data };
->>>>>>> master
       res.render("index", hbObj);
     });
   });
