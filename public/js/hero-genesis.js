@@ -38,7 +38,7 @@ $(document).ready(function(){
     $("#submitFormFateAcc").on("click", function(e){
       e.preventDefault();
       console.log("CLICKED");
-      var type= "dnd5e";
+      var type= "fateacc";
       var newCharacter = {
           name: $("#nameText").val(),
           description: $("#descriptionText").val(),
