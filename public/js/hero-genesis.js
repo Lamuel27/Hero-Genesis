@@ -4,7 +4,7 @@ $(document).ready(function(){
         $("body").html(data);
       })
     });
-  $("#submitType").on("click", function(){
+  $("#goToDnd5e").on("click", function(){
     var type = "dnd5e";
     $.get("/form/:type", type, function(data){
       $("body").html(data);
