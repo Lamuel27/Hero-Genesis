@@ -3,9 +3,9 @@ var conversion = require("phantom-html-to-pdf");
 
 module.exports = function (app) {
   // Load index page
-  app.get("/", function (req, res) {
-    db.Dnd5e.findAll({ limit: 5 }).then(function (data) {
-      var hbObj = { character: data };
+  app.get("/", function(req, res) {
+    db.Dnd5e.findAll({ limit : 5, order : [['createdAt' , 'DESC']]}).then(function(data) {
+      var hbObj = {character: data};
       res.render("index", hbObj);
     });
   });
@@ -20,12 +20,12 @@ module.exports = function (app) {
 
   //Load character form page
   app.get("/form/:type", function (req, res) {
-    if (req.params.type = "dnd5e") {
+    if (req.params.type == "dnd5e") {
       res.render("form-dnd5e", {
         type: "dnd5e"
       });
     }
-    else if (req.params.type = "fateacc") {
+    else if (req.params.type == "fateacc") {
       res.render("fateacc", {
         type: "fateacc"
       });

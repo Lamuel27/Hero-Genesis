@@ -5,14 +5,15 @@ $(document).ready(function(){
       })
     });
   $("#goToDnd5e").on("click", function(){
-    var type = "dnde5";
-    $.get("/form/:type", type, function(data){
+    var type = "dnd5e";
+    $.get("/form/"+type, function(data){
       $("body").html(data);
     });
   });
   $("#goToFateAcc").on("click", function(){
+    console.log("CLicked fate")
     var type = "fateacc";
-    $.get("/form/:type", type, function(data){
+    $.get("/form/"+type, function(data){
       $("body").html(data);
     });
   });
@@ -41,4 +42,23 @@ $(document).ready(function(){
       $("body").html(data);
     }));
   });
+  $("#submitFormFateAcc").on("click", function(e){
+    e.preventDefault();
+    var type="fateacc";
+    var newCharacter = {
+        name: $("#nameText").val(),
+        description: $("#descriptionText").val(),
+        highConcept: $("#highConceptText").val(),
+        trouble: $("#troubleText").val(),
+        aspect3: $("#aspect3Text").val(),
+        aspect4: $("#aspect4Text").val(),
+        aspect5: $("#aspect5Text").val(),
+        stunts: $("#stuntsText").val()
+    }
+    $.post("/form/" + type, newCharacter, function(data){
+      console.log("New post="+data)
+    }).then($.get("/creations/all", function(data){
+      $("body").html(data);
+    }));
+  })
 });
