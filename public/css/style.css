@@ -9,6 +9,7 @@ body {
   background-position-x: right;
   background-repeat: no-repeat;
   background-blend-mode: soft-light;
+  background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6, p, li, td {
@@ -36,6 +37,10 @@ td {
   border-top: 1px solid rgb(200,200,200);
   border-bottom: 1px solid rgb(200,200,200);
   font-family: 'Quicksand', sans-serif;
+}
+
+input {
+  color:rgb(200,200,200);
 }
 
 .btn {
