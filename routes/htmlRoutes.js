@@ -20,15 +20,20 @@ module.exports = function (app) {
   app.get("/game", function (req, res) {
     res.render("game-pick", {
       type1: "dnd5e",
-      type2: "something"
+      type2: "fateacc"
     });
   });
 
   //Load character form page
   app.get("/form/:type", function (req, res) {
-    if (req.params.id = "dnde5") {
+    if (req.params.type = "dnd5e") {
       res.render("form-dnd5e", {
         type: "dnd5e"
+      });
+    }
+    else if (req.params.type = "fateacc") {
+      res.render("fateacc", {
+        type: "fateacc"
       });
     }
   });
