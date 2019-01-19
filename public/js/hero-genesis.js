@@ -5,7 +5,13 @@ $(document).ready(function(){
       })
     });
   $("#goToDnd5e").on("click", function(){
-    var type = "dnd5e";
+    var type = "dnde5";
+    $.get("/form/:type", type, function(data){
+      $("body").html(data);
+    });
+  });
+  $("#goToFateAcc").on("click", function(){
+    var type = "fateacc";
     $.get("/form/:type", type, function(data){
       $("body").html(data);
     });
