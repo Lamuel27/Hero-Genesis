@@ -31,7 +31,7 @@ $(document).ready(function(){
     console.log("Loggggggging");
     $.post("/form/" + type, newCharacter, function(data){
       console.log("New post="+data)
-    }).then($.get("/creations/all)", function(data){
+    }).then($.get("/creations/all", function(data){
       $("body").html(data);
     }));
   });
