@@ -3,7 +3,7 @@ var db = require("../models");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    db.Dnd5e.findAll({ limit : 5 }).then(function(data) {
+    db.Dnd5e.findAll({ limit : 5, order : [['createdAt' , 'DESC']]}).then(function(data) {
       var hbObj = {character: data};
       res.render("index", hbObj);
     });
