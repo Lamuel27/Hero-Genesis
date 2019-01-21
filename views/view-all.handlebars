@@ -2,12 +2,16 @@
   <h2>All Characters</h2>
   <ul id="view-all-list" class="list-group">
     <table>
+      <thead>
+        <th>Name</th>
+        <th>GameType</th>
+        <th>Author</th>
+      </thead>
       {{#each character}}
       <tr data-id="{{this.id}}" class="list-group-item">
         <td>{{name}}</td>
-        <td>{{race}}</td>
-        <td>{{class}}</td>
-        <td>{{level}}</td>
+        <td>{{gameType}}</td>
+        <td>{{author}}</td>
       </tr>
       {{/each}}
     </table>

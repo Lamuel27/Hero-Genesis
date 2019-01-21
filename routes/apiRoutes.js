@@ -9,10 +9,13 @@ module.exports = function(app) {
       res.json(character);
     });
     }
+<<<<<<< Updated upstream
     else if(req.params.type = "something"){
       db.Something.create(req.body).then(function(character){
         res.json(character);
       })
     }
+=======
+>>>>>>> Stashed changes
   });
 };

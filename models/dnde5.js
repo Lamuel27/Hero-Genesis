@@ -14,13 +14,6 @@ module.exports = function(sequelize, DataTypes) {
           len: [1]
         }
       },
-      level: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        validate: {
-          len: [1]
-        }
-      },
       background: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -83,8 +76,22 @@ module.exports = function(sequelize, DataTypes) {
         validate: {
           len: [1]
         } 
+      },
+      author: {
+        type:DataTypes.STRING,
+        allowNull: true,
+        validate: {
+          len: [1]
+        }
+      },
+      gameType: {
+        type: DataTypes.STRING,
+        allowNull: true,
+        validate: {
+          len: [1]
+        }
       }
     });
-
+  
     return Dnd5e;
 };
