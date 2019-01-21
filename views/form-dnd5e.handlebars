@@ -1,56 +1,86 @@
 <h1>Character Form: DnD 5e</h1>
 
 <form class="create-form">
-    <div class="form-group">
-        <label for="name">Character Name:</label>
-        <input type="text" id="nameText" name="name"></input>
+    <div class="row">
+        <div class="col m4">
+            <div class="form-group">
+                <div class="input-field">
+                    <label for="name">Character Name</label>
+                    <input class="text" type="text" id="nameText" name="name"></input>
+                </div>
+            </div>
+        </div>
+        <div class="col m4">
+            <div class="form-group">
+                <div class="input-field">
+                    <label for="class">Class</label>
+                    <input class="text" type="text" id="classText" name="class"></input>
+                </div>
+            </div>
+        </div>
+        <div class="col m4" <div class="form-group">
+            <div class="input-field">
+                <label for="background">Background</label>
+                <input class="text" type="text" id="backgroundText" name="background"></input>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col m6">
+            <div class="form-group">
+                <div class="input-field">
+                    <label for="race">Race</label>
+                    <input class="text" type="text" id="raceText" name="race"></input>
+                </div>
+            </div>
+        </div>
+        <div class="col m6">
+            <div class="form-group">
+                <div class="input-field">
+                    <label for="alignment">Alignment</label>
+                    <input class="text" type="text" id="alignmentText" name="alignment"></input>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="form-group">
-        <label for="class">Class:</label>
-        <input type="text" id="classText" name="class"></input>
+        <div class="input-field">
+            <textarea class="materialize-textarea" id="personalityTraitsText" name="personalityTraits"></textarea>
+            <label for="personalityTraits">Personality Traits</label>
+        </div>
     </div>
     <div class="form-group">
-        <label for="level">Level:</label>
-        <input type="number" id="levelVal" name="level"></input>
+        <div class="input-field">
+            <textarea class="materialize-textarea" id="idealsText" name="ideals"></textarea>
+            <label for="ideals">Ideals</label>
+        </div>
     </div>
     <div class="form-group">
-        <label for="background">Background:</label>
-        <input type="text" id="backgroundText" name="background"></input>
+        <div class="input-field">
+            <textarea class="materialize-textarea" id="bondsText" name="bonds"></textarea>
+            <label for="bonds">Bonds</label>
+        </div>
     </div>
     <div class="form-group">
-        <label for="race">Race:</label>
-        <input type="text" id="raceText" name="race"></input>
+        <div class="input-field">
+            <textarea class="materialize-textarea" id="flawsText" name="flaws"></textarea>
+            <label for="flaws">Flaws</label>
+        </div>
     </div>
     <div class="form-group">
-        <label for="alignment">Alignment:</label>
-        <input type="text" id="alignmentText" name="alignment"></input>
+        <div class="input-field">
+            <textarea class="materialize-textarea" id="featuresAndTraitsText" name="featuresAndTraits"></textarea>
+            <label for="featuresAndTraits">Features and Traits</label>
+        </div>
     </div>
     <div class="form-group">
-        <label for="experience">Experience:</label>
-        <input type="number" id="experienceVal" name="experience"></input>
-    </div>
-    <div class="form-group">
-        <label for="personalityTraits">Personality Traits:</label>
-        <input type="text" id="personalityTraitsText" name="personalityTraits"></input>
-    </div>
-    <div class="form-group">
-        <label for="ideals">Ideals:</label>
-        <input type="text" id="idealsText" name="ideals"></input>
-    </div>
-    <div class="form-group">
-        <label for="bonds">Bonds:</label>
-        <input type="text" id="bondsText" name="bonds"></input>
-    </div>
-    <div class="form-group">
-        <label for="flaws">Flaws:</label>
-        <input type="text" id="flawsText" name="flaws"></input>
-    </div>
-    <div class="form-group">
-        <label for="featuresAndTraits">Features and Traits:</label>
-        <input type="text" id="featuresAndTraitsText" name="featuresAndTraits"></input>
+        <div class="input-field">
+            <label for="author">Author</label>
+            <input class="text" type="text" id="authorText" name="author"></input>
+        </div>
     </div>
 
-    <button type="submitForm" id = "submitFormDnd5e">
+    <button class="btn btn-primary" type="submitForm" id="submitFormDnd5e">
         Submit Character
     </button>
 </form>

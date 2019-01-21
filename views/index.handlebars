@@ -9,16 +9,14 @@
         <table>
           <thead>
             <th>Name</th>
-            <th>Race</th>
-            <th>Class</th>
-            <th>Level</th>
+            <th>GameType</th>
+            <th>Author</th>
           </thead>
           {{#each character}}
-          <tr data-id="{{this.id}}" class="list-group-item">
+          <tr id={{this.id}} class="list-group-item">
             <td>{{name}}</td>
-            <td>{{race}}</td>
-            <td>{{class}}</td>
-            <td>{{level}}</td>
+            <td>{{gameType}}</td>
+            <td>{{author}}</td>
           </tr>
           {{/each}}
         </table>

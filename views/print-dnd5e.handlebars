@@ -1,12 +1,61 @@
 <div class="entry">
-    <h1>Character Form: DnD 5e - PDF Printable</h1>
+    <h2>Character Form: {{form.name}} (DnD 5e)</h2>
     <div class="entry">
-        {{form}}
+        <div class="row print">
+            <div class="col m6">
+                <p style="text-align:left">Character Name</p>
+                <h5 style='text-align:left'>{{form.name}}</h5>
+            </div>
+            <div class="col m6">
+                <p style="text-align:left">Class</p>
+                <h5 style='text-align:left'>{{form.class}}</h5>
+            </div>
+        </div>
+        <div class="row print">
+            <div class="col m4">
+                <p style="text-align:left">Background</p>
+                <h5 style='text-align:left'>{{form.background}}</h5>
+            </div>
+            <div class="col m4">
+                <p style="text-align:left">Race</p>
+                <h5 style='text-align:left'>{{form.race}}</h5>
+            </div>
+            <div class="col m4">
+                <p style="text-align:left">Alignment</p>
+                <h5 style='text-align:left'>{{form.alignment}}</h5>
+            </div>
+        </div>
+        <div class="row print">
+            <div class="col m6">
+                <p style="text-align:left">Personality Traits</p>
+                <h5 style='text-align:left'>{{form.personalityTraits}}</h5>
+            </div>
+            <div class="col m6">
+                <p style="text-align:left">Ideals</p>
+                <h5 style='text-align:left'>{{form.ideals}}</h5>
+            </div>
+        </div>
+        <div class="row print">
+            <div class="col m6">
+                <p style="text-align:left">Bonds</p>
+                <h5 style='text-align:left'>{{form.bonds}}</h5>
+            </div>
+            <div class="col m6">
+                <p style="text-align:left">Flaws</p>
+                <h5 style='text-align:left'>{{form.flaws}}</h5>
+            </div>
+        </div>
+        <div class="row print">
+            <div class="col m12">
+                <p style="text-align:left">Features and Traits</p>
+                <h5 style='text-align:left'>{{form.featuresAndTraits}}</h5>
+            </div>
+        </div>
     </div>
 
-    <li>
-        <button class="print" data-id="{{this.id}}">PRINT!</button>
-    </li>
+    <p style="text-align:left">This character was created by <b>{{form.author}}</b></p>
+</div>
+</div>
 
 </div>
 
