@@ -23,7 +23,7 @@ $(document).ready(function () {
   $("#submitFormDnd5e").on("click", function (e) {
     e.preventDefault();
     console.log("CLICKED");
-    var type = "dnd5e";
+    var type= "dnd5e";
     var newCharacter = {
       name: $("#nameText").val(),
       class: $("#classText").val(),
