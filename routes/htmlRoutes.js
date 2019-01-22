@@ -43,6 +43,18 @@ module.exports = function (app) {
     }
   });
 
+  //Load print form page
+  app.get("/pdf", function (req, res) {
+    var page = require('webpage').create();
+    var filename = 'dnd5e-printable.pdf';
+    page.viewportSize = {width:800, height:600};
+    page.paperSize = {format: 'Letter', orientation: 'portrait', border:'0.5in'};
+    page.open('/pdf', function(){
+      page.render(filename);
+      phantom.exit();
+    });
+  });  
+
   //View all
   app.get("/creations/all", function (req, res) {
     db.Dnd5e.findAll().then(function (data) {
