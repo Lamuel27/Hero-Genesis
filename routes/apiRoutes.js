@@ -9,10 +9,5 @@ module.exports = function(app) {
       res.json(character);
     });
     }
-    else if(req.params.type == "fateacc"){
-      db.FateAcc.create(req.body).then(function(character){
-        res.json(character);
-      })
-    }
   });
 };
