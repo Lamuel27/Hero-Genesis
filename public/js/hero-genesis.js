@@ -23,7 +23,7 @@ $(document).ready(function () {
   $("#submitFormDnd5e").on("click", function (e) {
     e.preventDefault();
     console.log("CLICKED");
-    var type= "dnd5e";
+    var type = "dnd5e";
     var newCharacter = {
       name: $("#nameText").val(),
       class: $("#classText").val(),
@@ -45,5 +45,10 @@ $(document).ready(function () {
     }).then($.get("/creations/all", function (data) {
       $("body").html(data);
     }));
+  });
+
+  $(function () {
+    var images = ['../images/elf1.png', '../images/elf2.png', '../images/wizard.png', '../images/wizard2.png'];
+    $('#myPicture').css({ 'background-image': 'url(images/' + images[Math.floor(Math.random() * images.length)] + ')' });
   });
 });
