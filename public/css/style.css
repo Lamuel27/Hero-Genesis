@@ -12,6 +12,11 @@ body {
   background-attachment: fixed;
 }
 
+#logo {
+  font-family: 'MedievalSharp', cursive;
+  margin-top:0px;
+}
+
 h1, h2, h3, h4, h5, h6, p, li, td, .materialize-textarea, .text {
   font-weight: lighter;
   color: rgb(200,200,200);
