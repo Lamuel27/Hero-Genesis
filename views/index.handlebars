@@ -1,23 +1,25 @@
 <div id="home">
-        <h2>Hero Genesis</h2>
-        <p>Hero genesis is the fucking coolest. This is a bunch of placeholder text to show you what this looks like.
-          Click that motherfucking button.</p>
+  <div>
+  <img src="/images/HGLogoLight.PNG" style="width:200px;display:block;margin-left:auto;margin-right:auto">
+  </div>
+  <h2 id="logo">Hero Genesis</h2>
+  <p>Hero genesis is an open platform for RPG players and Dungeon Masters to generate and exchnage ideas.</p>
 
-        <button id="getStarted" class="btn btn-primary float-right">Create Character</button>
+  <button id="getStarted" class="btn btn-primary float-right">Create Character</button>
 
-        <h4>Recent Creations</h4>
-        <table>
-          <thead>
-            <th>Name</th>
-            <th>GameType</th>
-            <th>Author</th>
-          </thead>
-          {{#each character}}
-          <tr id={{this.id}} class="list-group-item">
-            <td>{{name}}</td>
-            <td>{{gameType}}</td>
-            <td>{{author}}</td>
-          </tr>
-          {{/each}}
-        </table>
+  <h4>Recent Creations</h4>
+  <table>
+    <thead>
+      <th>Name</th>
+      <th>GameType</th>
+      <th>Author</th>
+    </thead>
+    {{#each character}}
+    <tr id={{this.id}} class="list-group-item">
+      <td>{{name}}</td>
+      <td>{{gameType}}</td>
+      <td>{{author}}</td>
+    </tr>
+    {{/each}}
+  </table>
 </div>
