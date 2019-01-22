@@ -6,7 +6,7 @@ body {
   background-color: rgb(21,24,33);
   /* background-image: url("../images/Elf-Princess-2-Line-Art.png"); */
   background-size: 40%;
-  background-position-x: right;
+  background-position: bottom right;
   background-repeat: no-repeat;
   background-blend-mode: soft-light;
   background-attachment: fixed;
