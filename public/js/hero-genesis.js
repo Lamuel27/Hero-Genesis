@@ -84,7 +84,7 @@ $(document).ready(function () {
   });
 
   $("#classAdd").on("click", function () {
-    var name = ['Pirate','Gladiator','Gardener', 'Ranger', 'Woodland Monk', 'Blacksmith', 'Bounty Hunter', 'Knight', 'Baker', 'Hunter', 'Lumberjack', 'Barbarian', 'Bard', 'Cleric', 'Druid', 'Paladin', 'Rogue', 'Sorcerer', 'Warlock', 'Wizard'];
+    var name = ['Pirate', 'Gladiator', 'Gardener', 'Ranger', 'Woodland Monk', 'Blacksmith', 'Bounty Hunter', 'Knight', 'Baker', 'Hunter', 'Lumberjack', 'Barbarian', 'Bard', 'Cleric', 'Druid', 'Paladin', 'Rogue', 'Sorcerer', 'Warlock', 'Wizard'];
     $('#classText').val(name[Math.floor(Math.random() * name.length)]);
   });
 
@@ -165,7 +165,7 @@ $(document).ready(function () {
       'Humanity. Human life is to be cherished and preserved against the horrors of the night.',
       'Knowledge. The path to holiness comes through understanding of the world.',
       'Punishment. It is better for the innocent to suffer than for the guilty to escape their due.'
-      ];
+    ];
     $('#idealsText').val(ideals[Math.floor(Math.random() * ideals.length)]);
   });
 
@@ -200,7 +200,7 @@ $(document).ready(function () {
       'I come from a noble family, and one day I’ll reclaim my lands and title from those who stole them from me.',
       'A powerful person killed someone I love. Some day soon, I’ll have my revenge.',
       'I swindled and ruined a person who didn’t deserve it. I seek to atone for my misdeeds but might never be able to forgive myself.'
-      ];
+    ];
     $('#bondsText').val(bonds[Math.floor(Math.random() * bonds.length)]);
   });
 
@@ -235,7 +235,7 @@ $(document).ready(function () {
       'I am a miser. Having lost everything once before, I clutch my possessions and wealth very tightly.',
       'I am a moocher. I am so used to others providing for me that I have come to expect everyone to do it.',
       'I believe the gods have cursed me and my family. We are all doomed, doomed I tell you!'
-      ];
+    ];
     $('#flawsText').val(flaws[Math.floor(Math.random() * flaws.length)]);
   });
 
@@ -246,4 +246,7 @@ $(document).ready(function () {
   // print();
   // });
   // $("#print").printThis();
+
+  
+
 });
