@@ -25,7 +25,15 @@
 </head>
 
 
-<body id="myPicture">
+<body>
+
+  <ul id="slide-out" class="sidenav">
+    <li style="text-align:center"><h5><a class="waves-effect" id="homeButton" href="#!"><img src="/images/HGLogoLight.PNG" style="width:35px"><br/>Home</a></h5></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect" id="viewAllButton" href="#!">View All Characters</a></li>
+    <li><a class="waves-effect" id="gamePickerButton" href="#!">Game Picker</a></li>
+  </ul>
+  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
   <div class="container">
     <div class="row">
       <div class="col m12">
@@ -34,5 +42,11 @@
     </div>
   </div>
 </body>
+
+<script>
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>
 
 </html>
