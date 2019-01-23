@@ -22,6 +22,24 @@ $(document).ready(function () {
     });
   });
 
+  $("#homeButton").on("click", function () {
+    $.get("/", function (data) {
+      $("body").html(data);
+    })
+  });
+
+  $("#viewAllButton").on("click", function () {
+    $.get("/creations/all", function (data) {
+      $("body").html(data);
+    })
+  });
+
+  $("#gamePickerButton").on("click", function () {
+    $.get("/game", function (data) {
+      $("body").html(data);
+    })
+  });
+
   $("#submitFormDnd5e").on("click", function (e) {
     e.preventDefault();
     console.log("CLICKED");
