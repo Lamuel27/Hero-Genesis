@@ -12,6 +12,9 @@
     "express-handlebars": "^3.0.0",
     "mysql2": "^1.6.4",
     "phantom-html-to-pdf": "^0.5.6",
+    "print-html": "0.0.2",
+    "print-js": "^1.0.54",
+    "printd": "^1.1.0",
     "sequelize": "^4.42.0"
   },
   "devDependencies": {},

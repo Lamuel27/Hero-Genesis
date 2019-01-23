@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+
   $("#getStarted").on("click", function () {
     $.get("/game", function (data) {
       $("body").html(data);
@@ -218,4 +220,12 @@ $(document).ready(function () {
       ];
     $('#flawsText').val(flaws[Math.floor(Math.random() * flaws.length)]);
   });
+
+  var print = require('print-html')
+
+  // printJS('#print', 'html');
+  $( "#prin" ).on( "click", function(  ) {
+  print();
+  });
+  // $("#print").printThis();
 });
