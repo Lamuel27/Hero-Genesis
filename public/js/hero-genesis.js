@@ -68,7 +68,7 @@ $(document).ready(function () {
   });
 
   $(function () {
-    var images = ['../images/elf1.png', '../images/elf2.png', '../images/wizard.png', '../images/wizard2.png', '../images/orc.png', '../images/viking.png', '../images/Barbarian.PNG', '../images/Dragon.PNG', '../images/Dwarf.PNG'];
+    var images = ['../images/elf1.png', '../images/elf2.png', '../images/wizard.png', '../images/wizard2.png', '../images/orc.png', '../images/viking.png', '../images/Barbarian.PNG', '../images/Dwarf.PNG'];
     $('#myPicture').css({ 'background-image': 'url(images/' + images[Math.floor(Math.random() * images.length)] + ')' });
   });
 
