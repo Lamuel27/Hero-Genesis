@@ -2,6 +2,10 @@
 
 ## Description
 
+### Deployment
+[Hero Genesis]
+[Hero Genesis GitHub page]
+
 ## Visuals
 ![Home](./public/images/hero_genesis.jpg)
 
@@ -62,13 +66,16 @@ All the recommended files and directories from the steps above should look like 
 
 ### Using the app
 **Main Page**
-![Main Page](./public/images/home_hero-genesis.jpg)
+![Main Page](./public/images/home_hero-genesis_250x250.jpg)
+
 **Create Character**
-![Create Character](./public/images/create_hero-genesis.jpg)
+![Create Character](./public/images/create_hero-genesis_250x250.jpg)
+
 **DND 5E**
-![DND 5E](./public/images/DND5E_hero-genesis.jpg)
+![DND 5E](./public/images/DND5E_hero-genesis_250x250.jpg)
+
 **Fate Accerlerated**
-![Fate Accerlerated](./public/images/fate_hero-genesis.jpg)
+![Fate Accerlerated](./public/images/fate_hero-genesis_250x250.jpg)
 
 ## Technologies Used
 * HTML
@@ -118,3 +125,5 @@ Paoge Moua
 [Visual Studio Code]: https://code.visualstudio.com/download
 [Git Bash]: https://git-scm.com/downloads
 [Chrome]: https://www.google.com/chrome/
+[Hero Genesis]: https://lit-reaches-81284.herokuapp.com/
+[Hero Genesis GitHub page]: https://github.com/Lamuel27/Hero-Genesis
