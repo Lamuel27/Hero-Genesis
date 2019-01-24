@@ -10,6 +10,7 @@ body {
   background-repeat: no-repeat;
   background-blend-mode: soft-light;
   background-attachment: fixed;
+  overflow:scroll;
 }
 
 #logo {
