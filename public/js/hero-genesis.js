@@ -79,18 +79,18 @@ $(document).ready(function () {
   });
 
   $("#alignmentAdd").on("click", function () {
-    var name = ['Lawful Good', 'Neutral', 'Lawful Evil', 'Neutral Evil', 'Neutral Good', 'Chaotic Good', 'Chaotic Neutral', 'Chaotic Evil', 'Lawful Neutral'];
-    $('#alignmentText').val(name[Math.floor(Math.random() * name.length)]);
+    var align = ['Lawful Good', 'Neutral', 'Lawful Evil', 'Neutral Evil', 'Neutral Good', 'Chaotic Good', 'Chaotic Neutral', 'Chaotic Evil', 'Lawful Neutral'];
+    $('#alignmentText').val(align[Math.floor(Math.random() * align.length)]);
   });
 
   $("#classAdd").on("click", function () {
-    var name = ['Pirate', 'Gladiator', 'Gardener', 'Ranger', 'Woodland Monk', 'Blacksmith', 'Bounty Hunter', 'Knight', 'Baker', 'Hunter', 'Lumberjack', 'Barbarian', 'Bard', 'Cleric', 'Druid', 'Paladin', 'Rogue', 'Sorcerer', 'Warlock', 'Wizard'];
-    $('#classText').val(name[Math.floor(Math.random() * name.length)]);
+    var classes = ['Pirate', 'Gladiator', 'Gardener', 'Ranger', 'Woodland Monk', 'Blacksmith', 'Bounty Hunter', 'Knight', 'Baker', 'Hunter', 'Lumberjack', 'Barbarian', 'Bard', 'Cleric', 'Druid', 'Paladin', 'Rogue', 'Sorcerer', 'Warlock', 'Wizard'];
+    $('#classText').val(classes[Math.floor(Math.random() * classes.length)]);
   });
 
   $("#raceAdd").on("click", function () {
-    var name = ['Dragonborn', 'Dwarf', 'Elf', 'Gnome', 'Half-Elf', 'Halfling', 'Half-Orc', 'Human', 'Tiefling', 'Aarakocra', 'Genasi', 'Goliath', 'Aasimar', 'Bugbear', 'Firbolg', 'Goblin', 'Hobgoblin', 'Kenku', 'Kobold', 'Lizardfolk', 'Orc', 'Tabaxi', 'Triton', 'Yuan-ti Pureblood', 'Feral Tiefling', 'Tortle', 'Gith', 'Changeling', 'Kalashtar', 'Shifter', 'Warforged', 'Centaur', 'Loxodon', 'Minotaur', 'Simic Hybrid', 'Vedalken'];
-    $('#raceText').val(name[Math.floor(Math.random() * name.length)]);
+    var race = ['Dragonborn', 'Dwarf', 'Elf', 'Gnome', 'Half-Elf', 'Halfling', 'Half-Orc', 'Human', 'Tiefling', 'Aarakocra', 'Genasi', 'Goliath', 'Aasimar', 'Bugbear', 'Firbolg', 'Goblin', 'Hobgoblin', 'Kenku', 'Kobold', 'Lizardfolk', 'Orc', 'Tabaxi', 'Triton', 'Yuan-ti Pureblood', 'Feral Tiefling', 'Tortle', 'Gith', 'Changeling', 'Kalashtar', 'Shifter', 'Warforged', 'Centaur', 'Loxodon', 'Minotaur', 'Simic Hybrid', 'Vedalken'];
+    $('#raceText').val(race[Math.floor(Math.random() * race.length)]);
   });
 
   $('#personalityAdd').on("click", function () {
