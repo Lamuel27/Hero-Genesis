@@ -67,29 +67,6 @@ $(document).ready(function () {
     }));
   });
 
-  var getDND = function () {
-  var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://dnd5eapi.co/api/classes/",
-    "method": "GET",
-    "headers": {
-      "cache-control": "no-cache",
-      "postman-token": "5ca4c04c-1933-e2bf-ece5-aa2296ed4132",
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET",
-      "Access-Control-Allow-Headers": "Origin, Methods, Content-Type"
-
-    },
-    "data": "://Example var xhReq = new XMLHttpRequest(); xhReq.open(\"GET\", \"http://localhost:2001/method1\", false); xhReq.send(null); var serverResponse = xhReq.responseText; console.log(serverResponse);"
-  }
-  
-  $.ajax(settings).done(function (response) {
-    console.log(response);
-  });
-  }
- getDND();
-
   $(function () {
     var images = ['../images/elf1.png', '../images/elf2.png', '../images/wizard.png', '../images/wizard2.png', '../images/orc.png', '../images/viking.png', '../images/Barbarian.png', '../images/Dragon.png', '../images/Dwarf.png'];
     $('#myPicture').css({ 'background-image': 'url(images/' + images[Math.floor(Math.random() * images.length)] + ')' });
