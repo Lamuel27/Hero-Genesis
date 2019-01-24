@@ -3,11 +3,11 @@
 ## Description
 
 ### Deployment
-[Hero Genesis]
-[Hero Genesis GitHub page]
+* [Hero Genesis]
+* [Hero Genesis GitHub page]
 
 ## Visuals
-![Home](./public/images/hero_genesis.jpg)
+![Home](./public/images/hero_genesis_250x250.jpg)
 
 ## Installations
 ### Requirements
@@ -65,17 +65,17 @@ All the recommended files and directories from the steps above should look like 
 1. Go to your browser and open a new tab and type `localhost: 3000` then hit enter.
 
 ### Using the app
-**Main Page**
-![Main Page](./public/images/home_hero-genesis_250x250.jpg)
+* Main Page
+* ![Main Page](./public/images/home_hero-genesis_250x250.jpg)
 
-**Create Character**
-![Create Character](./public/images/create_hero-genesis_250x250.jpg)
+* Create Character
+* ![Create Character](./public/images/create_hero-genesis_250x250.jpg)
 
-**DND 5E**
-![DND 5E](./public/images/DND5E_hero-genesis_250x250.jpg)
+* DND 5E
+* ![DND 5E](./public/images/DND5E_hero-genesis_250x250.jpg)
 
-**Fate Accerlerated**
-![Fate Accerlerated](./public/images/fate_hero-genesis_250x250.jpg)
+* Fate Accerlerated
+* ![Fate Accerlerated](./public/images/fate_hero-genesis_250x250.jpg)
 
 ## Technologies Used
 * HTML
