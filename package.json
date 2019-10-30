@@ -16,7 +16,7 @@
     "print-html": "0.0.2",
     "print-js": "^1.0.54",
     "printd": "^1.1.0",
-    "sequelize": "^4.42.0"
+    "sequelize": "^5.15.1"
   },
   "devDependencies": {},
   "scripts": {
